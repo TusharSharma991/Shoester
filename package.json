@@ -6,12 +6,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
-    
+    "preview": "vite preview",
+    "deploy": "vite build && vite gh-pages"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -29,6 +27,8 @@
     "gh-pages": "^6.0.0",
     "postcss": "^8.4.29",
     "tailwindcss": "^3.3.3",
-    "vite": "^4.4.5"
+    "vite": "^4.4.5",
+    "vite-plugin-gh-pages": "^0.4.1",
+    "vite-plugin-legacy": "^2.1.0"
   }
 }
