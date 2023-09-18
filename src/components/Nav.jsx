@@ -4,7 +4,7 @@ import {navLinks} from '../constants';
 
 const Nav = () => {
   return (
-    <header className='padding-x py-8 absolute z-10 w-full'>
+    <header className='padding-x py-8 absolute z-10 w-full bg-black'>
         <nav className='flex justify-between items-center max-container'>
             <a href="/">
                 <img src={headerLogo} alt='logo' width={130} height={29}/>
@@ -12,7 +12,7 @@ const Nav = () => {
             <ul className='flex-1 flex justify-center items-center gap-16 max-lg:hidden'> 
                 {navLinks.map((item) => (
                     <li key={item.label}>
-                        <a href={item.href} className='font-montserrat leading-normal text-lg text-slate-gray'>
+                        <a href={item.href} className='font-montserrat leading-normal text-lg text-white hover:bg-coral-red rounded-3xl p-2 text-bold'>
                             {item.label}
                         </a>
                     </li>

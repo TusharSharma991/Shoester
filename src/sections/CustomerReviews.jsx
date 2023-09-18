@@ -9,7 +9,7 @@ const CustomerReviews = () => {
         <span className='text-coral-red'> Customers </span>
         Say?
       </h3>
-      <p className='m-auto mt-4 max-w-lg  text-center info-text'>
+      <p className='m-auto mt-4 max-w-lg  text-center text-black font-montserrat'>
         Hear genuine stories from our satisfied customers about their
         exceptional experiences with us.
       </p>
